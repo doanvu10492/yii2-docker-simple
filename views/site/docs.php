@@ -4,7 +4,7 @@
 
 use yii\helpers\Html;
 
-$this->title = $title;
+$this->title = 'Theta Network Docs';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">

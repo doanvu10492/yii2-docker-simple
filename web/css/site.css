@@ -82,3 +82,12 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+/** FOOTER **/
+#footer.bg-light {
+    background: #09090d !important;
+}
+
+#footer .f-top {
+    margin-bottom: 20px;
+}

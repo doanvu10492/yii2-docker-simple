@@ -9,9 +9,13 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Page;
 
 class SiteController extends Controller
 {
+    protected $title = null;
+
+
     /**
      * {@inheritdoc}
      */
@@ -123,6 +127,48 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+        return $this->render('about', [
+            'title' => 'This is about website'
+        ]);
+    }
+
+    /**
+     * Enterprises page action
+     *
+     * @return string
+     */
+    public function actionEnterprises()
+    {
+        return $this->render('enterprises');
+    }
+
+    /**
+     * Docs page action
+     *
+     * @return string
+     */
+    public function actionDocs()
+    {
+        return $this->render('docs');
+    }
+
+    /**
+     * Wallet page action
+     *
+     * @return string
+    */
+    public function actionWallet()
+    {
+        return $this->render('wallet');
+    }
+
+    /**
+     * Devs page action
+     *
+     * @return string
+    */
+    public function actionDevs()
+    {
+        return $this->render('devs');
     }
 }
